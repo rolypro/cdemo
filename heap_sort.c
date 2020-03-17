@@ -29,7 +29,7 @@ void adjust_heap(int arr[], int head, int n) {
     }
 
     //右子树
-    if (2*head+2 < n && arr[2*head+1] > arr[max_index]) {
+    if (2*head+2 < n && arr[2*head+2] > arr[max_index]) {
         max_index = 2*head+2;
     }
 
@@ -85,13 +85,13 @@ void show_array(int arr[], int n) {
 }
 
 int main() {
-    int array[] = {5,66,4,88,2,12,59,9,30,100};
-    int n = 10;
+    int array[] = {12,3,2,44,5};
+    int n = 5;
     int k = 5;
     show_array(array, n);
 
-    // build_max_heap(array, n);
-    // show_array(array, n);
+    build_max_heap(array, n);
+    show_array(array, n);
 
     // head_sort(array, n);
     // show_array(array, n);
